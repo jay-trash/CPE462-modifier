@@ -127,6 +127,7 @@ r_classifier = 0
 g_classifier = 0
 b_classifier = 0
 
+
 #RED CHANNEL
 if red_avg >= 0 and red_avg <=84:
     r_classifier = 0
@@ -202,5 +203,87 @@ elif blue_avg >= 171 and blue_avg <=255:
         for y in range(0,final_w) :
             if input.item(x,y,2) <= 170:
                 input.itemset((x,y,2),171)
+
+
+
+
+
+'''
+#RED CHANNEL
+if red_avg >= 0 and red_avg <=99:
+    r_classifier = 0
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,0) >= 100:
+                input.itemset((x,y,0),99)
+
+elif red_avg >= 100 and red_avg <=199:
+    r_classifier = 1
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,0) <= 99:
+                input.itemset((x,y,0),100)
+            elif input.item(x,y,0) >= 199:
+                input.itemset((x,y,0),200)
+
+elif red_avg >= 200 and red_avg <=255:
+    r_classifier = 2
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,0) <= 199:
+                input.itemset((x,y,0),200)
+
+
+
+#GREEN CHANNEL
+if green_avg >= 0 and green_avg <=99:
+    g_classifier = 0
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,1) >= 100:
+                input.itemset((x,y,1),99)
+
+elif green_avg >= 100 and green_avg <=199:
+    g_classifier = 1
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,1) <= 99:
+                input.itemset((x,y,1),100)
+            elif input.item(x,y,1) >= 199:
+                input.itemset((x,y,1),200)
+
+elif green_avg >= 200 and green_avg <=255:
+    g_classifier = 2
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,1) <= 199:
+                input.itemset((x,y,1),200)
+
+
+
+#BLUE CHANNEL
+if blue_avg >= 0 and blue_avg <=99:
+    b_classifier = 0
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,2) >= 100:
+                input.itemset((x,y,2),99)
+
+elif blue_avg >= 100 and blue_avg <=199:
+    b_classifier = 1
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,2) <= 99:
+                input.itemset((x,y,2),100)
+            elif input.item(x,y,2) >= 199:
+                input.itemset((x,y,2),200)
+
+elif blue_avg >= 200 and blue_avg <=255:
+    b_classifier = 2
+    for x in range(0,final_h) :
+        for y in range(0,final_w) :
+            if input.item(x,y,2) <= 199:
+                input.itemset((x,y,2),200)
+'''
 
 cv.imwrite(sys.argv[3], input)

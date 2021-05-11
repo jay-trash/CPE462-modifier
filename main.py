@@ -2,11 +2,6 @@ import cv2 as cv
 import numpy as np
 import sys
 
-
-
-
-
-
 #input and load images
 debug = "false";
 if len(sys.argv) != 4 or len(sys.argv) == 5 :
@@ -72,7 +67,6 @@ if debug == "true" :
 
 
 #brightness detect and modification
-
 bsum_inp = 0
 for x in range(0,final_h) :
 	for y in range(0,final_w) :

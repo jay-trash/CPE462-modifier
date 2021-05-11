@@ -286,6 +286,6 @@ elif blue_avg >= 200 and blue_avg <=255:
                 input.itemset((x,y,2),200)
 '''
 
-cv.imwrite(sys.argv[3], input)
+#cv.imwrite(sys.argv[3], input)
 cv.imshow(sys.argv[3], input)
 cv.waitKey(0)

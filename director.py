@@ -19,13 +19,15 @@ def input_output():
         Choice a: main.py
         Choice b: mattmain.py
         Choice c: jaworski_filter_generator.py
+        Choice d: contraster.py
         ''')
 
     input_four = input('Please write your choice letter for the program that you want to use and press ENTER\n')
     program_dict = {
         "a": "main.py",
         "b": "mattmain.py",
-        "c": "jaworski_filter_generator.py"
+        "c": "jaworski_filter_generator.py",
+        "d": "contraster.py"
     }
     input_four_converted = program_dict[input_four]
 

@@ -287,3 +287,5 @@ elif blue_avg >= 200 and blue_avg <=255:
 '''
 
 cv.imwrite(sys.argv[3], input)
+cv.imshow(sys.argv[3], input)
+cv.waitKey(0)

@@ -65,7 +65,6 @@ if debug == "true" :
 
 
 
-
 #brightness detect and modification
 #brightness sum input
 #scan
@@ -174,9 +173,6 @@ for x in range(0,final_h) :
         sum_mod1 += modif.item(x,y,0)
         sum_mod2 += modif.item(x,y,1)
         sum_mod3 += modif.item(x,y,2)
-#sum_mod1 = sum_mod1/3
-#sum_mod2 = sum_mod2/3
-#sum_mod3 = sum_mod3/3
 sum_mod1 = int(sum_mod1)
 sum_mod2 = int(sum_mod2)
 sum_mod3 = int(sum_mod3)

@@ -26,12 +26,14 @@ def input_output():
     program_dict = {
         "a": "mattmain.py",
         "b": "jaworski_filter_generator.py",
-        "c": "contraster.py"
+        "c": "contraster.py",
         "d": "Iraklimain.py"
     }
     input_four_converted = program_dict[input_four]
 
-    total_input = 'python' + ' ' + input_four_converted + ' ' + input_one + ' ' + input_two + ' ' + input_three
+    input_python = input('How is python called on your system? (For example "python" or "python3")\n')
+
+    total_input = input_python + ' ' + input_four_converted + ' ' + input_one + ' ' + input_two + ' ' + input_three
     os.system(total_input)
 
 

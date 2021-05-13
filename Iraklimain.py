@@ -25,7 +25,7 @@ in_h, in_w, in_c = input.shape
 
 # Blurring
 
-box filter
+#box filter
 kernel = (1/9)*np.array([[1,1,1],
                             [1,1,1],
                              [1,1,1]])

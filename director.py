@@ -3,11 +3,12 @@ import os
 def input_output():
     print(
         '''
-        This program takes 4 inputs.
+        This program takes 5 inputs.
         1. The image you want to change (Input Image).
         2. The image that you want to extract data from to change the first image (Seed Image).
         3. The name of the output file with '.jpg' extension at the end.
         4. The program that you want to use on the images.
+        5. Your version of python.
         Make sure that the seed images and python files are all in the same directory.
         ''')
     input_one = input('Type the name of your input image (with extension) and press ENTER\n')

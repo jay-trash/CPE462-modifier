@@ -11,9 +11,9 @@ def input_output():
         5. Your version of python.
         Make sure that the seed images and python files are all in the same directory.
         ''')
-    input_one = input('Type the name of your input image (with extension) and press ENTER\n')
-    input_two = input('Type the name of your seed image (with extension) and press ENTER\n')
-    input_three = input('Type the name of the output file with .jpg extension and press ENTER\n')
+    input_one = input('   Type the name of your input image (with extension) and press ENTER\n')
+    input_two = input('   Type the name of your seed image (with extension) and press ENTER\n')
+    input_three = input('   Type the name of the output file with .jpg extension and press ENTER\n')
     print(
         '''
         These are the available python programs to choose from so far:
@@ -24,7 +24,7 @@ def input_output():
         Choice e: contraster.py
         ''')
 
-    input_four = input('Please type your choice letter for the program that you want to use and press ENTER\n')
+    input_four = input('    Please type your choice letter for the program that you want to use and press ENTER\n')
     program_dict = {
         "a": "mattmain.py",
         "b": "pattern_generator.py",
@@ -34,7 +34,7 @@ def input_output():
     }
     input_four_converted = program_dict[input_four]
 
-    input_python = input('How is python called on your system? (For example "python" or "python3")\n')
+    input_python = input('  How is python called on your system? (For example "python" or "python3")\n')
 
     total_input = input_python + ' ' + input_four_converted + ' ' + input_one + ' ' + input_two + ' ' + input_three
     os.system(total_input)

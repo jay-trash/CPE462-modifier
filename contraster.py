@@ -1,6 +1,10 @@
+#Made by Matthew Jaworski
+#I pledge my honor that I have abided by the Stevens Honor System.
+
 import cv2 as cv
 import numpy as np
 import sys
+import random
 
 
 debug = "false";
@@ -61,28 +65,9 @@ if debug == "true" :
     cv.imshow("Raw Input", input)
     cv.waitKey(0)
 
-#to run these, use the same image twice
-'''for x in range(0,final_h) :
-    for y in range(0,final_w) :
-        #get sums of each color channel
-        input.itemset((x,y,0),modif.item(x,y,2))
-        input.itemset((x,y,1),modif.item(x,y,0))
-        input.itemset((x,y,2),modif.item(x,y,1))'''
 
-'''for x in range(0,final_h) :
-    for y in range(0,final_w) :
-        #get sums of each color channel
-        input.itemset((x,y,0),modif.item(x,y,1))
-        input.itemset((x,y,1),modif.item(x,y,2))
-        input.itemset((x,y,2),modif.item(x,y,0))'''
-
-#this is the contrast one
-#commented out stuff in the contrast code is the "Color Weirder"
 for x in range(0,final_h) :
     for y in range(0,final_w) :
-        '''num1 = modif.item(x,y,0)
-        num2 = modif.item(x,y,1)
-        num3 = modif.item(x,y,2)'''
 
         num1 = input.item(x,y,0)
         num2 = input.item(x,y,1)
@@ -107,34 +92,7 @@ for x in range(0,final_h) :
             input.itemset((x,y,2),0)
         else:
             input.itemset((x,y,2),255)
-        '''num4 = input.item(x,y,0)
-        num5 = input.item(x,y,1)
-        num6 = input.item(x,y,2)
 
-        if num1 >= num2 and num2 >= num3:
-            input.itemset((x,y,0),num4)
-            input.itemset((x,y,1),num5)
-            input.itemset((x,y,2),num6)
-        elif num1 >= num3 and num3 >= num2:
-            input.itemset((x,y,0),num4)
-            input.itemset((x,y,1),num6)
-            input.itemset((x,y,2),num5)
-        elif num2 >= num1 and num1 >= num3:
-            input.itemset((x,y,0),num5)
-            input.itemset((x,y,1),num4)
-            input.itemset((x,y,2),num6)
-        elif num2 >= num3 and num3 >= num1:
-            input.itemset((x,y,0),num5)
-            input.itemset((x,y,1),num6)
-            input.itemset((x,y,2),num4)
-        elif num3 >= num1 and num1 >= num2:
-            input.itemset((x,y,0),num6)
-            input.itemset((x,y,1),num4)
-            input.itemset((x,y,2),num5)
-        elif num3 >= num2 and num2 >= num1:
-            input.itemset((x,y,0),num6)
-            input.itemset((x,y,1),num5)
-            input.itemset((x,y,2),num4)'''
 
 cv.imshow(sys.argv[3], input)
 cv.waitKey(0)

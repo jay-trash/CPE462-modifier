@@ -17,17 +17,19 @@ def input_output():
         '''
         These are the available python programs to choose from so far:
         Choice a: mattmain.py
-        Choice b: jaworski_filter_generator.py
-        Choice c: contraster.py
-        Choice d: Iraklimain.py
+        Choice b: pattern_generator.py
+        Choice c: Iraklimain.py
+        Choice d: jaworski_filter_generator.py
+        Choice e: contraster.py
         ''')
 
     input_four = input('Please write your choice letter for the program that you want to use and press ENTER\n')
     program_dict = {
         "a": "mattmain.py",
-        "b": "jaworski_filter_generator.py",
-        "c": "contraster.py",
-        "d": "Iraklimain.py"
+        "b": "pattern_generator.py",
+        "c": "Iraklimain.py",
+        "d": "jaworski_filter_generator.py",
+        "e": "contraster.py",
     }
     input_four_converted = program_dict[input_four]
 

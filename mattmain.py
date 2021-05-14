@@ -222,9 +222,7 @@ for x in range(0,final_h) :
 if debug == "true" :
     cv.imshow("Color change applied", input)
     cv.waitKey(0)
-
-
-
-
-
+    
 cv.imwrite(sys.argv[3], input)
+cv.imshow(sys.argv[3], input)
+cv.waitKey(0)

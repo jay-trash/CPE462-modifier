@@ -22,6 +22,7 @@ def input_output():
         Choice c: Iraklimain.py
         Choice d: jaworski_filter_generator.py
         Choice e: contraster.py
+        Choice f: maskmg.py
         ''')
 
     input_four = input('    Please type your choice letter for the program that you want to use and press ENTER\n')
@@ -31,6 +32,7 @@ def input_output():
         "c": "Iraklimain.py",
         "d": "jaworski_filter_generator.py",
         "e": "contraster.py",
+        "f": "maskmg.py"
     }
     input_four_converted = program_dict[input_four]
 

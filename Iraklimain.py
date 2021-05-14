@@ -74,6 +74,9 @@ if debug == "true" :
     cv.imshow("Sharpness Applied", newImgS)
     cv.waitKey(0)
 
-cv.imwrite(sys.argv[2], newImgB)
-cv.imwrite(sys.argv[3], newImgSColor)
+#cv.imwrite(sys.argv[2], newImgB)
+#cv.imwrite(sys.argv[3], newImgSColor)
+cv.imshow(sys.argv[2], newImgB)
+cv.imshow(sys.argv[3], newImgSColor)
+cv.waitKey(0)
 
